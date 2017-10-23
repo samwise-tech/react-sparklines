@@ -1,6 +1,6 @@
 {
   "name": "react-sparklines",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Beautiful and expressive Sparklines component for React ",
   "main": "build/index.js",
   "directories": {
@@ -36,7 +36,7 @@
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.18.2",
-    "babel-loader": "^6.2.8",
+    "babel-loader": "^7.1.2",
     "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
@@ -60,6 +60,7 @@
     "react-dom": "*"
   },
   "dependencies": {
-    "react-addons-shallow-compare": "^15.4.0"
+    "prop-types": "^15.6.0",
+    "react-addons-shallow-compare": "^15.6.2"
   }
 }
