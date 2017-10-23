@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class SparklinesBars extends React.Component {
 
     static propTypes = {
-        points: React.PropTypes.arrayOf(React.PropTypes.object),
-        height: React.PropTypes.number,
-        style: React.PropTypes.object,
-        barWidth: React.PropTypes.number
+        points: PropTypes.arrayOf(PropTypes.object),
+        height: PropTypes.number,
+        style: PropTypes.object,
+        barWidth: PropTypes.number
     };
 
     static defaultProps = {

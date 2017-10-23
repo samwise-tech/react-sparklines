@@ -1,4 +1,7 @@
+import PropTypes from 'prop-types';
 import React from 'react';
+import shallowCompare from 'react-addons-shallow-compare';
+
 import SparklinesLine from './SparklinesLine';
 import SparklinesCurve from './SparklinesCurve';
 import SparklinesBars from './SparklinesBars';
@@ -6,23 +9,21 @@ import SparklinesSpots from './SparklinesSpots';
 import SparklinesReferenceLine from './SparklinesReferenceLine';
 import SparklinesNormalBand from './SparklinesNormalBand';
 import dataToPoints from './dataProcessing/dataToPoints';
-import shallowCompare from 'react-addons-shallow-compare';
-
 
 class Sparklines extends React.Component {
 
     static propTypes = {
-        data: React.PropTypes.array,
-        limit: React.PropTypes.number,
-        width: React.PropTypes.number,
-        height: React.PropTypes.number,
-        svgWidth: React.PropTypes.number,
-        svgHeight: React.PropTypes.number,
-        preserveAspectRatio: React.PropTypes.string,
-        margin: React.PropTypes.number,
-        style: React.PropTypes.object,
-        min: React.PropTypes.number,
-        max: React.PropTypes.number
+        data: PropTypes.array,
+        limit: PropTypes.number,
+        width: PropTypes.number,
+        height: PropTypes.number,
+        svgWidth: PropTypes.number,
+        svgHeight: PropTypes.number,
+        preserveAspectRatio: PropTypes.string,
+        margin: PropTypes.number,
+        style: PropTypes.object,
+        min: PropTypes.number,
+        max: PropTypes.number
     };
 
     static defaultProps = {
